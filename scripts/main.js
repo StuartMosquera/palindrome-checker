@@ -8,9 +8,9 @@ function checkPalindrome(text) {
     return;
   }
 
-  if (text.length === 1) {
-    displayResult(`${text} is a palindrome.`);
-  } else if (normalizeText(text) === reverseText(normalizeText(text))) {
+  const normalizedText = normalizeText(text);
+
+  if (normalizedText.length === 1 || normalizedText === reverseText(normalizedText)) {
     displayResult(`${text} is a palindrome.`);
   } else {
     displayResult(`${text} is not a palindrome.`);
