@@ -19,11 +19,11 @@ function checkPalindrome(text) {
   textInput.value = '';
 }
 
-const reverseText = text => text.split('').reverse().join('');
+const displayResult = message => result.innerText = message;
 
 const normalizeText = text => text.toLowerCase().replace(/[^a-z0-9]/g, '');
 
-const displayResult = message => result.innerText = message;
+const reverseText = text => text.split('').reverse().join('');
 
 checkBtn.onclick = () => checkPalindrome(textInput.value);
 
