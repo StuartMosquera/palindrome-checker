@@ -19,7 +19,7 @@ function checkPalindrome(text) {
   textInput.value = '';
 }
 
-const displayResult = message => result.innerText = message;
+const displayResult = message => result.textContent = message;
 
 const normalizeText = text => text.toLowerCase().replace(/[^a-z0-9]/g, '');
 
